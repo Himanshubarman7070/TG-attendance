@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+height: 100vh;
+width: 100vw;
+overflow: hidden;
+background-color:#121212;
+font-family: 'arial',sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.container{
+    width: 30%;
+    border: 0.001vw solid rgb(0, 0,0,0.3);
+    background-color:  #1F1F1F;
+}
+.text{
+    color: white;
+    font-size: 1.6vw;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.align{
+    display: flex;
+    justify-content: center;
+}
+input{
+    color: white;
+    width: 70%;
+    font-size: 1vw;
+    border-radius: 0.6vw;
+    margin-top: 3%;
+    font-weight: 100;
+    padding: 2%;
+    border: 0.001vw solid rgb(0, 0,0,0.18);
+    background-color: #121212;
+}
+
+button{
+    border: none;
+    background-color:#0B57D0;
+    padding: 2%;
+    width: 74%;
+    border-radius: 0.6vw ;   
+    font-size: 1.3vw;
+    font-weight: bold;
+    opacity: 0.85;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.text3,.text2{
+    margin-top: 5%;
+    color:#8c899c;
+    opacity: 0.7;
+    font-size: 1.3vw;
+    text-align: center;
+}
+span{
+    color: blue;
+    font-weight: bolder;
+    font-size: 1.4vw;
+}
+.te{
+    font-size: 0.8vw;
+    margin-bottom: 6%;
+}
+.marg{
+    margin-top: 6%;
+}
+.bar2{
+    margin-left: 2%;
+    margin-top: 2%;
+}
+@media (max-aspect-ratio:1/1) 
+{
+    .container{
+        height: 100vh;
+        width: 100vw;
+    }
+    .text{
+        font-size: 4vw;
+    }
+    input{
+        font-size: 2vw;
+    }
+    button{
+        font-size: 3vw;;
+    }
+    .text2,.te{
+        font-size: 2vw;
+    }
+    .text3{
+        font-size: 2.5vw;
+    }
+    span{
+        font-size: 2.5vw;
+    }
+} 

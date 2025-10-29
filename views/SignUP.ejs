@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TG Attendance & Applications</title>
+    <link rel="stylesheet" href="SignUP.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text">𝗧𝗚 𝗔𝘁𝘁𝗲𝗻𝗱𝗮𝗻𝗰𝗲 & 𝗔𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀</div>
+        <form>
+            <div class="align name"><input type="text" placeholder=" Enter your name" id="name" name="name"></div>
+            <div class="align mobile"><input type="number" placeholder=" Enter your mobile no" id="mobile"name="mobile"></div>
+            <div class="align text2">Your are TG or Student</div>
+            <div class="align lev"><label><input type="radio" value="TG" name="module">TG</label>
+                <label><input type="radio"  value="Student" name="module">Student</label></div>
+            <div class="align"><input type="text" placeholder=" Enter your enrollment or id" id="Enroll" name="Enroll"></div> 
+            <div class="align"><input type="text" placeholder=" Create a password" id="pass" name="pass" required> </div>
+            <div class="align"><input type="password" placeholder=" Confirm your passwrod" id="CNF" required></div>
+            <div id="Wrong"></div>
+            <div class="align"><button type="submit" onclick="Sign(event)">Submit</button></div>
+        </form>
+    </div>
+</body>
+<script src="/Javascript/SignUp.js"></script>
+</html>

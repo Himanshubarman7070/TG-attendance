@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TG Attendance & Applications</title>
+    <link rel="stylesheet" href="/TG-home.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+   
+    <div class="Container" id="Container">
+     <nav id="Nav" style="width: 27%;">
+      <div onclick="decr()" class="bar-back"><i class="fa-solid fa-arrow-left"></i></div>
+        <div class="Name"><pre><i class="fa-regular fa-user"></i> <%= data.name %></pre></div>
+        <div id="Home" onclick="Home()" class="item Home"><pre><i class="fa-solid fa-house"></i>  Home</pre></div>
+        <div id="Attendance" class="item Attendance" onclick="JoinRequest()"><pre><i class="fa-regular fa-calendar-check"></i> Join Requests</pre></div>
+        <div id="Application" class="item Applications"onclick="Application()"><pre><i class="fa-regular fa-file-zipper"></i> Applications</pre></div>
+        <div id="Profile" class="item" onclick="Profile()"><pre><i class="fa-regular fa-user"></i> Profile</pre></div>
+        <div id="About" class="item" onclick="About()"><pre><i class="fa-solid fa-circle-info"></i> About</pre></div>        
+        <div id="LogOut"class="item Log-out" onclick="LogOut()"><pre><i class="fa-solid fa-arrow-right-from-bracket"></i> Log out</pre></div>
+     </nav>
+     
+     <main id="Main" class="main">
+      <div id="Home-nav">
+      <header class="head">
+         <div class="welcome"><div id="Bar"onclick="incr()" class="bar"> <i class="fa-solid fa-bars"></i> </div>
+            <div class="move"><div class="move-text">Welcome to TG Attendance & Applications</div></div></div>
+         <div class="profile">
+            <div class="profile-icon" onclick="Profile()"><i class="fa-regular fa-circle-user"></i></i></div>
+            <div class="profile-name" onclick="Profile()"></div>
+         </header>
+         <div class="container1-text" >Today`s students attendance or application</div>
+         <div class="posting" id="PostingAttendance">
+      
+         </div>
+         <div class="view">
+            <div class="view-attedance view-com">
+               <div class="view-text1">Check attedance <br>report</div>
+               <button class="view-btn1" onclick="ViewAttendance()">View</button>
+            </div>
+            <div class="view-application view-com">
+            <div class="view-text1">View applications<br>report</div>
+            <button class="view-btn1">View</button>
+            </div>
+            <div class="view-group_members view-com">
+               <div class="view-text1">Check TG group <br>members</div>
+            <button class="view-btn1" onclick="GruopMember()">Group</button>
+            </div>
+         </div>
+      </div>
+      <br>
+      <br>
+      <div id="Requests"> 
+         <div id="Bar"onclick="incr()" class="bar"> <i class="fa-solid fa-bars"></i> </div>   
+         <div  class="request" id="AddReq"> 
+        <div class="request-text">Here is students TG group join requests</div>
+            
+           </div>
+           </div>
+         <div id="Requests2"> 
+         <div id="Bar"onclick="incr()" class="bar"> <i class="fa-solid fa-bars"></i> </div>   
+         <div  class="request" id="AddReq"> 
+        <div class="request-text">TG gruop members</div>
+            
+           </div>
+           </div>  
+           <div id="Application-nav" class="application-nav">
+             <div class="application-container" id="ApplicationReport">
+               <div id="Bar"onclick="incr()" class="bar"> <i class="fa-solid fa-bars"></i> </div>   
+               <div class="application-text" id="Ap">Here is Today's students applications</div>      
+             </div>
+             <div class="previous" onclick="ViewApplication()">Previous Application</div>
+           </div>
+           <div id="Read" class="read-application">
+            <div id="Bar"onclick="incr()" class="bar"> <i class="fa-solid fa-bars"></i> </div>
+            <div style="margin-left: 3%;margin-top: 1%; color:white;">Here is application of stduent,zoom
+               <button onclick="Incr()" id="Incr">+</button><button onclick="Decr()" id="Decr">-</button>
+            </div>
+            <pre id="Reading" style="font-size:1.2vw;width:60vw ;color:white;">
+            </pre>
+           </div>
+           
+        </main>
+       <div class="take-date" id="Take-Date">
+            <div class="join-cross" onclick="Cut()"><i class="fa-solid fa-square-xmark"></i></div>
+            <div class="take-date-text">Enter your date</div>
+            <div class="take-date-input">
+               <input type="date" placeholder=" Enter date" id="TakeInput" required>
+            </div>
+            <button class="take-date-btn" id="TakeDateBtn" onclick="ViewReport()">Submit</button>
+           </div>
+
+             <div id="Join" class="join">
+      <div class="join-cross" onclick="Cross()"><i class="fa-solid fa-square-xmark"></i></div>
+      <form class="join-form">
+         
+        <div class="center join-text">Send group join request</div> 
+        <div class="center"><input type="text" placeholder="Enter TG group id" class="join-input"required></div>
+        <div class="center"><button class="join-send" type="submit">Send</button></div> 
+      </form>
+    </div>
+
+    </div>
+     </div>
+        
+     <div id="Join" class="join">
+      <div class="join-cross" onclick="Cross()"><i class="fa-solid fa-square-xmark"></i></div>
+      <form class="join-form">
+         
+        <div class="center join-text">Send group join request</div> 
+        <div class="center"><input type="text" placeholder="Enter TG group id" class="join-input"required></div>
+        <div class="center"><button class="join-send" type="submit">Send</button></div> 
+      </form>
+    </div>
+    <div id="Log-Out" class="log-out">
+      <div class="join-cross" onclick="Cross()"><i class="fa-solid fa-square-xmark"></i></div>
+      <div class="log-out-text">Do you want to log out your account</div>
+      <div class="log-out-stay" onclick="Cross()">Stay log in</div>
+      <div class="log-out-yes"><div class="log" onclick="LogForever()">Log out</div></div>
+    </div>
+</body>
+<script>
+   let name = "<%= data.name %>";
+   let Enroll = "<%= data.Enroll %>";
+   let TG_id= "<%= data.TG_id %>";
+   let mobile = "<%= data.mobile %>";
+</script>
+<script src="/Javascript/TG-home.js">
+
+</script>
+</html>

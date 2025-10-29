@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'arial',sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container{
+    width: 30%;
+    border: 0.001vw solid rgb(0, 0,0,0.3);
+    background-color: #1F1F1F;
+}
+form{
+    height: 70vh;
+    width: 100%;
+}
+.text2{
+    font-size: 1vw;
+    margin-top: 2%;
+    color: white;
+}
+label{
+    font-size: 1vw;
+}
+.lev{
+    margin-bottom: 4%;
+}
+.text{
+    font-size:1.6vw;
+    margin-top: 10%;
+    margin-bottom: 7%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+input{
+    height: 68%;
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #121212;
+    font-size: 1vw;
+    color: white;
+    border-radius: 3%;
+    border: 0.001vw solid rgb(0, 0, 0,0.25);
+}
+.align{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    height: 75%;
+    width: 80%;
+    margin-top: 10%;
+    font-size: 1.4vw;
+    color: white;
+    font-weight: bold;
+    opacity: 0.8;
+    background-color: #0E4FB6;
+    border: none;
+}
+#Wrong{
+    color: red;
+    font-weight: 300;
+    font-size: 1.3vw;
+    text-align: center;
+}
+@media (max-aspect-ratio:1/1){
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    .text2{
+        font-size: 3vw;
+    }
+    label{
+        font-size: 3vw;
+    }
+    .text{
+        font-size: 5vw;
+    }
+    input{
+        font-size: 2.4vw;
+    }
+    button{
+        font-size: 2.9vw;
+    }
+    #Wrong{
+        font-size: 3.3vw;
+    }
+}

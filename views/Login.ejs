@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TG Attendance & Applications</title>
+    <link  rel="stylesheet" href="/Login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text">𝗧𝗚 𝗔𝘁𝘁𝗲𝗻𝗱𝗮𝗻𝗰𝗲 & 𝗔𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀</div>
+        <form action="/LoginDone" method="post">
+           <div class="align"> <input type="number" placeholder="Enter your mobile no." name='mobile' required></div>
+          <div class="align"> <input type="text" placeholder="Enter your password" name="pass" required></div>
+          <div class="align marg">  <button type="submit">Login</button></div>
+        </form>
+        <div class="text2">or</div>
+        <div class="text3">Don't have an acount?<span id="Span" onclick="SignUp()"> sign up</span></div>
+        <div class="text2 te">Contact us to any query<br> himanshubarman7070@gmail.com</div>
+    </div>
+</body>
+<script>
+    function SignUp(){
+        window.location.href='/SignUp';
+    }
+</script>
+</html>
